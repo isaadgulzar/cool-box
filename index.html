@@ -6,115 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Box</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Slick Slider CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" />
-    <script src="./code.js"></script>
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <!-- Main Wrapper -->
+    <!-- Main Hero Wrapper -->
     <div id="main" class="max-w-screen-2xl mx-auto max-h-screen relative">
-        <!-- Navbar - Header  -->
-        <header class="max-w-screen-2xl relative h-16 mx-5 md:mx-20">
-            <nav id="NavBar" class="relative max-w-full h-20 md:h-40 w-full mx-auto flex items-center justify-between">
-                <button class="md:hidden inline-flex items-center justify-center mt-5 text-green outline-none focus:outline-none" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg id="openNavIcon" onclick="toggleDropDown(event)" class="md:hidden block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <span class="sr-only">Close main menu</span>
-                    <svg id="closeNavIcon" onclick="toggleDropDown(event)" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-                <a href="#">
-                    <!-- For Logo  -->
-                    <!-- <img class="w-72" src="./assets/images/Shape.png" alt=""> -->
-                    <h1 class="text-5xl md:text-6xl text-blue mt-12 md:mt-7 mb-8 font-bold italic">
-                        <span>
-                            Cool<span class="text-green font-normal">Box</span>
-                        </span>
-                    </h1>
-                </a>
-                <div class="flex">
-                    <div class="hidden md:flex mt-3 space-x-8 items-center  font-medium">
-                        <a href="#" class="text-sm md:text-lg xl:text-xl active">HOME</a>
-                        <a href="#" class="text-sm md:text-lg xl:text-xl">ABOUT US</a>
-                        <a href="#" class="text-sm md:text-lg xl:text-xl">PRODUCTS</a>
-                        <a href="#" class="text-sm md:text-lg xl:text-xl">BLOG</a>
-                        <a href="#" class="text-sm md:text-lg xl:text-xl">CONTACT US</a>
-                        <!-- Cart  -->
-                        <a href="#" class="h-14 w-14 bg-green rounded-full">
-                            <div class="flex justify-center items-center h-full">
-                                <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Cart  -->
-                <a href="#" class="h-9 md:h-14 w-9 md:w-14 mt-5 bg-green rounded-full md:hidden">
-                    <div class="flex justify-center items-center h-full">
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        <!-- <div class="w-full mx-auto"> -->
+            <!-- Navbar - Header  -->
+            <header class="max-w-screen-2xl relative h-16 mx-5 md:mx-20">
+                <nav id="NavBar" class="relative max-w-full h-20 lg:h-28h-10  xl:xl:h-40 w-full mx-auto flex items-center justify-between">
+                    <button class="lg:hidden inline-flex items-center justify-center mt-5 md:mt-0 text-green outline-none focus:outline-none" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="openNavIcon" onclick="toggleDropDown(event)" class="lg:hidden block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
+                        <span class="sr-only">Close main menu</span>
+                        <svg id="closeNavIcon" onclick="toggleDropDown(event)" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <a href="#">
+                        <!-- For Logo  -->
+                        <!-- <img class="w-72" src="./assets/images/Shape.png" alt=""> -->
+                        <h1 class="text-5xl xl:text-6xl mt-12 md:mt-7 mb-8 font-bold italic">
+                            <span>
+                                Cool<span class="text-green font-normal">Box</span>
+                            </span>
+                        </h1>
+                    </a>
+                    <div class="flex hidden lg:block">
+                        <div class="hidden md:flex mt-3 space-x-8 items-center font-medium">
+                            <a href="#" class="text-sm md:text-md xl:text-lg active">HOME</a>
+                            <a href="#" class="text-sm md:text-md xl:text-lg">ABOUT US</a>
+                            <a href="#" class="text-sm md:text-md xl:text-lg">PRODUCTS</a>
+                            <a href="#" class="text-sm md:text-md xl:text-lg">BLOG</a>
+                            <a href="#" class="text-sm md:text-md xl:text-lg">CONTACT US</a>
+                            <!-- Cart  -->
+                            <a href="#" class="h-12 xl:h-14 w-12 xl:w-14 bg-green rounded-full">
+                                <div class="flex justify-center items-center h-full">
+                                    <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </nav>
-            <!-- Mobile menu -->
-            <div id="MobileNav" class="hidden relative border w-full px-5 h- mx-auto md:hidden">
-                <div class="relative flex items-center justify-center h-auto">
-                    <div class="flex items-center px-2 lg:px-0">
-                        <div class="block">
-                            <div class="flex flex-col space-y-2">
-                                <a href="#" class="py-2 text-md text-white">HOME</a>
-                                <a href="#" class="py-2 text-md text-white">ABOUT US</a>
-                                <a href="#" class="py-2 text-md text-white">PRODUCTS</a>
-                                <a href="#" class="py-2 text-md text-white">BLOG</a>
-                                <a href="#" class="py-2 text-md text-white">CONTACT US</a>
+                    <!-- Cart  -->
+                    <a href="#" class="h-9 lg:h-14 w-9 lg:w-14 mt-5 md:mt-0 bg-green rounded-full lg:hidden">
+                        <div class="flex justify-center items-center h-full">
+                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </a>
+                </nav>
+                <!-- Mobile menu -->
+                <div id="MobileNav" class="hidden relative border w-full px-5 h- mx-auto lg:hidden">
+                    <div class="relative flex items-center justify-center h-auto">
+                        <div class="flex items-center px-2 lg:px-0">
+                            <div class="block">
+                                <div class="flex flex-col space-y-2">
+                                    <a href="#" class="py-2 text-md text-white">HOME</a>
+                                    <a href="#" class="py-2 text-md text-white">ABOUT US</a>
+                                    <a href="#" class="py-2 text-md text-white">PRODUCTS</a>
+                                    <a href="#" class="py-2 text-md text-white">BLOG</a>
+                                    <a href="#" class="py-2 text-md text-white">CONTACT US</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </header> 
+            <!-- Hero Section  -->
+            <div class="flex mt-40">
+                <div class="mx-auto text-center">
+                    <p class="text-4xl md:text-6xl font-bold text-center">
+                        De Complete <br>
+                        <span class="text-2xl font-semibold md:text-4xl lg:text-6xl md:font-bold">En Gezonde Eetservice</span>
+                    </p>
+                    <button class="inline-block px-7 py-3 customBtn mt-5 md:mt-10 outline-none focus:outline-none">
+                        <span class="text-xl text-white hover:text-black">CONTACT US</span>
+                    </button>
+                </div>
             </div>
-        </header> 
-    <!-- Hero Section  -->
-        <div class="flex mt-40">
-            <div class="mx-auto text-center">
-                <p class="text-4xl md:text-6xl font-bold text-center">
-                    De Complete <br>
-                    <span class="text-2xl font-semibold md:text-6xl md:font-bold">En Gezonde Eetservice</span>
-                </p>
-                <button class="inline-block px-7 py-3 customBtn mt-10 outline-none focus:outline-none">
-                    <span class="text-xl text-white hover:text-black">CONTACT US</span>
-                </button>
+            <div class="flex mt-20">
+                <img class="w-full" src="./assets/images/images.png" alt="">
             </div>
-        </div>
-        <div class="flex mt-20">
-            <img class="w-full" src="./assets/images/images.png" alt="">
-        </div>
-        <img class="absolute left-10 top-40 md:left-36 md:top-48 h-10" src="./assets/images/leaf.png" alt="">
-        <img class="absolute left-14 bottom-32 md:left-80 md:bottom-96 h-10" src="./assets/images/leaf.png" alt="">
-        <img class="absolute right-10 top-32 md:right-36 md:top-40 h-10" src="./assets/images/leaf.png" alt="">
-        <img class="absolute right-14 bottom-32  md:right-80 md:bottom-96 h-10" src="./assets/images/leaf.png" alt="">
+            <!-- top-left-1  -->
+            <img class="absolute left-10 top-40 md:left-36 md:top-36 lg:top-48 h-10" src="./assets/images/leaf.png" alt="">
+            <!-- top-right-1  -->
+            <img class="absolute right-10 top-32 md:right-36 md:top-36 lg:top-44 xl:top-48 h-10" src="./assets/images/leaf.png" alt="">
+            <!-- bottom-left-2  -->
+            <img class="absolute left-12 bottom-32 sm:bottom-52 md:left-40 xl:left-80 md:bottom-64 lg:bottom-80 xl:bottom-96 h-10" src="./assets/images/leaf.png" alt="">
+            <!-- bottom-right-2 -->
+            <img class="absolute right-12 bottom-32 sm:bottom-52 md:right-36 xl:right-80 md:bottom-64 lg:bottom-80 xl:bottom-96 h-10" src="./assets/images/leaf.png" alt="">
+        <!-- </div> -->
     </div>
     <!-- About Us  -->
-    <div class="max-w-screen-2xl mx-auto relative px-5 md:px-20">
-        <div class="pt-16 md:pt-32 pb-30 sm:grid md:grid-cols-2 justify-center items-center">
+    <div class="max-w-screen-2xl mx-auto relative px-5 md:px-20 lg:px-20 text-center lg:text-left">
+        <div class="pt-16 md:pt-10 lg:pt-32 pb-30 lg:grid lg:grid-cols-2 justify-center items-center">
             <div>
-                <h1 class="text-4xl md:text-6xl mt-12 mb-8 font-bold text-center md:text-left uppercase">
+                <h1 class="text-3xl md:text-4xl xl:text-6xl mt-12 mb-8 font-bold text-center lg:text-left uppercase">
                     <span>
                         About <span class="text-green">US</span>
                     </span>
                 </h1>
-                <div class="md:mr-20">
+                <div class="lg:mr-20">
                     <p class="text-xl font-normal">
                         Alles wat uw kantoor nodig heeft. CoolBox is een nieuw catering concept voor het mkb. Dankzij onze koelkasten 
                         kan uw bedrijf 24/7 genieten van onze gezonde producten. Dagelijks bezorgen we verse broodjes, 
@@ -129,20 +126,20 @@
                     <span class="text-xl text-white hover:text-black">Learn More</span>
                 </button>
             </div>
-            <div class="pt-10 md:pt-0">
+            <div class="pt-10 lg:pt-0">
                 <img src="./assets/images/about-us.png" alt="">
             </div>
         </div>
     </div>
     <!-- OUR FEATURED MENU  -->
-    <div class="max-w-screen-2xl mx-auto relative px-5 md:px-20">
-        <h1 class="text-4xl md:text-6xl mt-32 mb-8 font-bold text-center uppercase">
+    <div class="max-w-screen-2xl mx-auto relative px-20 md:px-36 lg:px-24 xl:px-20">
+        <h1 class="text-4xl md:text-4xl xl:text-6xl mt-32 mb-8 font-bold text-center uppercase">
             <span>
                 OUR FEATURED <span class="text-green">MENU</span>
             </span>
         </h1>
-        <div class="mt-16 pb-32">
-            <ul class="gap-y-4 gap-x-4 md:gap-x-14 sm:grid sm:grid-cols-2 lg:grid-cols-4">
+        <div class="mt-16 pb-7 md:pb-16 lg:pb-0 xl:pb-32">
+            <ul class="gap-y-4 gap-x-4 md:gap-y-7 md:gap-x-10 xl:gap-x-14 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <li>
                   <div class="bg-white space-y-4 rounded-none shadow">
                       <div class="relative aspect-w-3 aspect-h-2">
@@ -151,7 +148,7 @@
                               Vegan
                           </span>
                       </div>
-                      <div class="space-y-3 pb-3 text-center pt-5">
+                      <div class="space-y-3 pb-8 text-center pt-4">
                         <h1 class="font-bold text-md sm:text-xl">Lorem Ipsum</h1>
                         <p class="text-xl font-extrabold text-green">$165</p>
                       </div>
@@ -165,7 +162,7 @@
                                 Vegan
                             </span>
                         </div>
-                        <div class="space-y-3 pb-3 text-center pt-5">
+                        <div class="space-y-3 pb-8 text-center pt-4">
                           <h1 class="font-bold text-md sm:text-xl">Lorem Ipsum</h1>
                           <p class="text-xl font-extrabold text-green">$265</p>
                         </div>
@@ -179,7 +176,7 @@
                                 Vegetable
                             </span>
                         </div>
-                        <div class="space-y-3 pb-3 text-center pt-5">
+                        <div class="space-y-3 pb-8 text-center pt-4">
                           <h1 class="font-bold text-md sm:text-xl">Lorem Ipsum</h1>
                           <p class="text-xl font-extrabold text-green">$85</p>
                         </div>
@@ -193,7 +190,7 @@
                                 Salad
                             </span>
                         </div>
-                        <div class="space-y-3 pb-3 text-center pt-5">
+                        <div class="space-y-3 pb-8 text-center pt-4">
                           <h1 class="font-bold text-md sm:text-xl">Lorem Ipsum</h1>
                           <p class="text-xl font-extrabold text-green">$65</p>
                         </div>
@@ -203,42 +200,42 @@
         </div>
     </div>
     <!-- Footer  -->
-    <div  id="footer" class="max-w-screen-2xl mx-auto overflow-hidden mt-32">
-        <div class="md:flex justify-center relative py-7 mt-20 mb-12">
+    <div  id="footer" class="max-w-screen-2xl mx-auto overflow-hidden mt-10 lg:mt-32">
+        <div class="md:flex justify-center relative py-7 mt-10 mb-0">
             <div class="flex flex-col relative mx-auto space-y-7">
                 <div class="flex justify-center space-x-4">
                     <a href="#" class="text-white">
                     <span class="sr-only">Facebook</span>
-                    <svg class="h-7 w-7" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <svg class="h-5 w-5 md:h-7 md:w-7" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                         <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
                     </svg>
                     </a>
                     <a href="#" class="text-white">
                         <span class="sr-only">Twitter</span>
-                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="h-5 w-5 md:h-7 md:w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                         </svg>
                     </a>
                     <a href="#" class="text-white">
                     <span class="sr-only">Instagram</span>
-                    <svg class="h-7 w-7" data-prefix="fab" data-icon="instagram-square" class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <svg class="h-5 w-5 md:h-7 md:w-7" data-prefix="fab" data-icon="instagram-square" class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path>
                     </svg>
                     </a>
                     <a href="#" class="text-white">
                     <span class="sr-only">Youtube</span>
-                    <svg class="h-7 w-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <svg class="h-5 w-5 md:h-7 md:w-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                         <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
                     </svg>
                     </a>
                 </div>
-                <p class="text-sm md:text-2xl text-center text-white px-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p class="text-lg md:text-lg lg:text-xl text-center text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="flex flex-col gap-y-2 md:flex-row justify-center text-center md:justify-around">
-                    <a href="#" class="text-sm md:text-2xl text-white">Terms of Use</a>				
-                    <a href="#" class="text-sm md:text-2xl text-white">Cookies Policy</a>
-                    <a href="#" class="text-sm md:text-2xl text-white">Privacy Policy</a>
+                    <a href="#" class="text-lg md:text-lg lg:text-xl text-white">Terms of Use</a>				
+                    <a href="#" class="text-lg md:text-lg lg:text-xl text-white">Cookies Policy</a>
+                    <a href="#" class="text-lg md:text-lg lg:text-xl text-white">Privacy Policy</a>
                 </div>
-                <p class="text-2xl text-white text-center">CoolBox@</p>
+                <p class="text-sm md:text-lg lg:text-xl text-white text-center font-bold">CoolBox@</p>
             </div>
         </div>
     </div>
